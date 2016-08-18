@@ -34,11 +34,6 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  },
-
-  'get test' : {
-    controller : 'UserController',
-    action : 'test'
   }
 
   /***************************************************************************
