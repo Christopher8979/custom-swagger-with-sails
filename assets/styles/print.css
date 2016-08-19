@@ -1355,8 +1355,8 @@
   display: none;
 }
 .swagger-section .swagger-ui-wrap ul#resources li.resource ul.endpoints {
-  display: block !important;
+  display: block;
 }
 .swagger-section .swagger-ui-wrap ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation div.content {
-  display: block !important;
+  display: block;
 }

@@ -17,6 +17,11 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
+  // '/styles/typography.css',
+  // '/styles/reset.css',
+  // '/styles/screen.css',
+  // '/styles/print.css',
+  // '/styles/importer.css',
   'styles/**/*.css'
 ];
 
@@ -25,15 +30,31 @@ var cssFilesToInject = [
 // (uses Grunt-style wildcard/glob/splat expressions)
 var jsFilesToInject = [
 
-  // Load sails.io before everything else
   'js/dependencies/sails.io.js',
 
-  // Dependencies like jQuery, or Angular are brought in here
-  'js/dependencies/**/*.js',
-
-  // All of the rest of your client-side js files
+  // All of the client-side js files
   // will be injected here in no particular order.
-  'js/**/*.js'
+  '/js/object-assign-pollyfill.js',
+  '/js/jquery-1.8.0.min.js',
+  '/js/jquery.slideto.min.js',
+  '/js/jquery.wiggle.min.js',
+  '/js/jquery.ba-bbq.min.js',
+  '/js/handlebars-4.0.5.js',
+  '/js/lodash.min.js',
+  '/js/backbone-min.js',
+  '/js/swagger-ui.js',
+  '/js/highlight.9.1.0.pack.js',
+  '/js/highlight.9.1.0.pack_extended.js',
+  '/js/jsoneditor.min.js',
+  '/js/marked.js',
+  '/js/swagger-oauth.js',
+
+
+  // Load sails.io before everything else
+  '/js/dependencies/sails.io.js',
+
+  'js/**/*.js',
+  '/js/script.js'
 ];
 
 
@@ -81,7 +102,5 @@ module.exports.templateFilesToInject = templateFilesToInject.map(function(tplPat
   if (tplPath[0] === '!') {
     return require('path').join('!assets/', tplPath.substr(1));
   }
-  return require('path').join('assets/',tplPath);
+  return require('path').join('assets/', tplPath);
 });
-
-
