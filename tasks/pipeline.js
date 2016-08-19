@@ -17,11 +17,11 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
-  // '/styles/typography.css',
-  // '/styles/reset.css',
-  // '/styles/screen.css',
-  // '/styles/print.css',
-  // '/styles/importer.css',
+  '/styles/typography.css',
+  '/styles/reset.css',
+  '/styles/screen.css',
+  '/styles/print.css',
+  '/styles/importer.css',
   'styles/**/*.css'
 ];
 

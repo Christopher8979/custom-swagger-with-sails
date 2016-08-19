@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
 
-    <!-- Viewport mobile tag for sensible mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <title>
+    <%=typeof title == 'undefined' ? 'New Sails App' : title%>
+  </title>
+
+  <!-- Viewport mobile tag for sensible mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-    <!--
+  <!--
         Stylesheets and Preprocessors
         ==============================
 
@@ -28,18 +31,18 @@
             + Use a different or additional preprocessor, like SASS, SCSS or Stylus
     -->
 
-    <!--STYLES-->
-    <link rel="stylesheet" href="/styles/importer.css">
-    <link rel="stylesheet" href="/styles/print.css">
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/screen.css">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/typography.css">
-    <!--STYLES END-->
-  </head>
+  <!--STYLES-->
+  <link rel="stylesheet" href="/styles/typography.css">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/screen.css">
+  <link rel="stylesheet" href="/styles/print.css">
+  <link rel="stylesheet" href="/styles/importer.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <!--STYLES END-->
+</head>
 
-  <body>
-    <%- body %>
+<body class="swagger-section">
+  <%- body %>
 
 
 
@@ -112,5 +115,6 @@
     <script src="/js/js-yaml.min.js"></script>
     <script src="/js/script.js"></script>
     <!--SCRIPTS END-->
-  </body>
+</body>
+
 </html>
